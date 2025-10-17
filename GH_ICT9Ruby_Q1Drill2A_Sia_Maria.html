@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q1 Drill 2</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epunda+Sans:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+
+      body{
+          font-family:"Epunda Sans", sans-serif;
+      }
+
+      form{
+        background-color: aliceblue;
+        width: 70%;
+        padding: 20px;
+        margin: auto;
+        border-radius: 15px;
+        border: 20px ridge #5583ba;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      }
+
+      legend{
+        background-color: beige;
+        border-radius: 5px;
+        color: white;
+        padding: 5px 10px;
+      }
+
+      input[type="submit"], [type="reset"]
+        {
+          width:10em;
+          height: 2em;
+          background:whitesmoke;
+          border: 10px solid #04699d
+          border-radius:4px;
+          color: orangered;
+          font-size:inherit;
+          flex: 0 1 8em;
+          margin: 0 auto;
+        }
+
+      H2 {
+          text-align:center;
+      }
+
+      H3 {
+          text-align:left;
+      }
+
+</style>
+</head>
+</body>
+
+<form>
+<h2 style="color: #6a040f;"> 9-Ruby Bistro | Customizable and Delicious Pizza!</h2>
+
+<!--Customer Info-->
+  <fieldset> 
+    <legend><h3 style="color: #9d0208;">Customer Information</h3></legend>
+      <label for="name">First name:</label>
+        <input type="text" id="fname" name="name"
+        placeholder="Enter your fullname"><br>
+      <label for="Address">Address:</label>
+        <input type="text" id="Address" name="Address"
+        placeholder="Office/Home Address"><br>
+      <label for="">Telephone Number:</label>
+        <input type="password" id="Telephone Number" name="Telephone Number"
+        placeholder="Telephone"><br>
+      <label for="Email">Email:</label>
+        <input type="password" id="Email" name="Email"
+        placeholder="Email"><br>
+    </fieldset>
+    <br>
+
+<!--Pizza Specs-->
+<fieldset>
+  <legend><h3 style="color: #9d0208;"> Customize your pizza with toppings:</h3>
+  </legend>
+  <h4 style="color:#ef233c;">Crust</h4>
+  <input type="checkbox" id="Thin Crust" name="Thin Crust" value="Thin Crust">
+  <label for="checkbox 1"> Thin Crust</label><br>
+  <input type="checkbox" id="Thick Crust" name="Thick Crust" value="Thick Crust">
+  <label for="checkbox 2"> Thick Crust</label><br>
+  <input type="checkbox" id="Cheese-stuffed Crust" name="Cheese-stuffed Crust" value="Cheese-stuffed Crust">
+  <label for="checkbox 3"> Cheese-stuffed Crust </label><br>
+  <input type="checkbox" id="Gluten-free Crust" name="Gluten-free Crust" value="Gluten-free Crust">
+  <label for="checkbox 4"> Gluten-free Crust </label><br>
+
+  <h4 style="color:#ef233c;"> Meat:</h4>
+  <input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni">
+  <label for="checkbox 5"> Pepperoni </label><br>
+  <input type="checkbox" id="Ham" name="Mozzarella Cheese" value="Ham">
+  <label for="checkbox 6"> Ham </label><br>
+  <input type="checkbox" id="Ground Beef" name="Red Sauce" value="Groud Beef">
+  <label for="checkbox 7"> Ground Beef </label><br>
+  <input type="checkbox" id="Bacon" name="Bacon" value="Bacon">
+  <label for="checkbox 8"> Bacon </label><br>
+  <input type="checkbox" id="Salami" name="Bacon" value="Salami">
+  <label for="checkbox 9"> Salami </label><br>
+
+
+  <h4 style="color:#ef233c;">Vegtables</h4>
+  <input type="checkbox" id="Black Olives" name="Black Olives" value="Black Olives">
+  <label for="checkbox 10"> Black Olives </label><br>
+  <input type="checkbox" id="Spinach" name="Spinach" value="Spinach">
+  <label for="checkbox 11"> Spicnach</label><br>
+  <input type="checkbox" id="Jalapeños" name="Jalapeños" value="Jalapeños">
+  <label for="checkbox 12"> Jalapeños </label><br>
+  <input type="checkbox" id="" name="Bell Peppers" value="Bell Peppers">
+  <label for="checkbox 13"> Bell Peppers </label><br>
+  <input type="checkbox" id="Basil" name="Basil" value="Basil">
+  <label for="checkbox 15"> Basil </label><br>
+  <input type="checkbox" id="Mushrooms" name="Mushroooms" value="Mushrooms">
+  <label for="checkbox 16"> Mushrooms </label><br>
+
+  <h4 style="color:#ef233c;">Others:</h4>
+  <input type="checkbox" id="Pinepapple" name="Pineapple" value="Pineapple">
+  <label for="checkbox 17"> Pineapple </label><br>
+  <input type="checkbox" id="Mushrooms" name="Mushroooms" value="Mushrooms">
+  <label for="checkbox 18"> Mushrooms </label><br>
+  <input type="checkbox" id="Pesto" name="Pesto" value="Pesto">
+  <label for="checkbox 19"> Pesto </label><br>
+</fieldset>
+<br>
+
+  <!--Quantity-->
+  <fieldset>
+ <legend><h3 style="color: #9d0208;"> Quantity of Pizzas:</h3></legend>
+
+<!--Buttons-->
+ <label for="number" size="20"> Quantity </label><br>
+ <input type="number" name="quantity" min="1">
+
+<input type="submit" value="Submit">
+</fieldset>
+</html>
